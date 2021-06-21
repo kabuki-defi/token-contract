@@ -1,0 +1,27 @@
+{
+  "name": "token-contract",
+  "version": "1.0.0",
+  "description": "KABUKI erc20 token contract",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset --network development",
+    "migrate:rinkeby": "truffle migrate --reset --network rinkeby",
+    "migrate:bsn": "truffle migrate --reset --network bsn",
+    "chain": "ganache-cli -p 8545 -i 15 -l 100000000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabuki-defi/token-contract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kabuki-defi/token-contract/issues"
+  },
+  "homepage": "https://github.com/kabuki-defi/token-contract#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@truffle/hdwallet-provider": "^1.4.1"
+  }
+}
